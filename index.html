@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Color of Buttons</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="container-1">
+
+        <p></p>
+        <h1>Change Color of all the Buttons below</h1>
+        <p></p>
+
+        <div class="flex-box-choose-color">
+            <form action="">
+                <!-- Create menu of color options -->
+                <select onchange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+
+            <!-- Create Buttons -->
+            <button class="btn btn-primary" onclick="redButtons()">Red</button>
+            <button class="btn btn-danger" onclick="greenButtons()">Green</button>
+            <button class="btn btn-warning" onclick="randomColors()">Random</button>
+            <button class="btn btn-success" onclick="resetButtonColors()">Reset</button>
+
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
